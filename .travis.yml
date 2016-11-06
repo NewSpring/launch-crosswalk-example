@@ -25,12 +25,6 @@ install:
 - sudo apt-get install lib32z1 libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5
 script:
 - launch build launch-crosswalk-example.herokuapp.com
-- ls -al .build
-- ls -al .build/android
-- ls -al .build/android/project
-- ls -al .build/android/project/build
-- ls -al .build/android/project/build/outputs
-- ls -al .build/android/project/build/outputs/apk
 - launch hockey
 deploy:
   provider: heroku
