@@ -26,6 +26,12 @@ install:
 script:
 - launch build launch-crosswalk-example.herokuapp.com
 - ./.build/android/project/cordova/build --release
+- ls -al .build
+- ls -al .build/android
+- ls -al .build/android/project
+- ls -al .build/android/project/build
+- ls -al .build/android/project/build/outputs
+- ls -al .build/android/project/build/outputs/apk
 - launch hockey
 deploy:
   provider: heroku
