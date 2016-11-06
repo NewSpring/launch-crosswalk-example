@@ -26,6 +26,8 @@ install:
 script:
 - launch build launch-crosswalk-example.herokuapp.com
 - ./.build/android/project/cordova/build --release
+- mv ./.build/android/project/build/outputs/apk/project-armv7-release-unsigned.apk ./.build/android/project/build/outputs/apk/android-armv7-release-unsigned.apk
+- mv ./.build/android/project/build/outputs/apk/project-x86-release-unsigned.apk ./.build/android/project/build/outputs/apk/android-x86-release-unsigned.apk
 - ls -al .build
 - ls -al .build/android
 - ls -al .build/android/project
