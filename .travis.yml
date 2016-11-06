@@ -20,7 +20,7 @@ install:
 - tar zxvf android-sdk_r24.4.1-linux.tgz > /dev/null
 - mv android-sdk-linux .android
 - export ANDROID_HOME="$TRAVIS_BUILD_DIR/.android"
-- echo y | .android/tools/android update sdk --no-ui --all --filter tools,platform-tools,build-tools-23.0.3,android-23
+- echo y | .android/tools/android update sdk --no-ui --all --filter tools,platform-tools,build-tools-23.0.3,android-23,extra-android-m2repository,extra-google-m2repository
 - export ANDROID_ZIPALIGN="$TRAVIS_BUILD_DIR/.android/build-tools/23.0.3/zipalign"
 - sudo apt-get install lib32z1 libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5
 script:
